@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My todo List</title>
+    <style>
+        body{
+            background-color: aqua;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            /* margin-left: 250px; */
+        
+           
+        }
+        p{
+            display: flex;
+            font-size: 20px;
+            align-items: flex-end;
+            background-color: rgb(224, 81, 81);
+            width: 25%;
+        }
+        
+        p button{
+            margin-left: 100px;
+            
+        }
+        h2{
+            margin: 10px 20px ;
+            background-color: tomato;
+
+        }
+
+        .hide{
+            visibility: hidden;
+        }
+
+        .show{
+            visibility: visible;
+        }
+
+
+        .cycle{
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+            align-items: center;
+            border-radius: 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cycle">
+            <h1>To-Do List</h1>
+            <form action="" class="message">
+                <input id="item" type="text" required>
+                <button class="submit">Submit</button>
+                <button class="clear">Clear</button>
+            </form>
+            <h2 class="hide">Please Inter a Todo list</h2>
+        </div>
+    
+        <div class="add">
+              
+        </div>
+        
+    </div>
+    <script src="./todo-list.js"></script>
+    
+</body>
+</html>
